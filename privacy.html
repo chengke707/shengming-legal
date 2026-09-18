@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>盛名学英语 · 隐私协议</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 80px;
+      background: #fafafa;
+      color: #1a1a1a;
+      line-height: 1.8;
+      font-size: 15px;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 600;
+      border-bottom: 1px solid #ececec;
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      color: #2b6cff;
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: 500;
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+    p {
+      margin: 12px 0;
+      color: #333;
+    }
+    ul, ol {
+      margin: 12px 0;
+      padding-left: 24px;
+    }
+    li {
+      margin: 6px 0;
+      color: #333;
+    }
+    strong { color: #1a1a1a; }
+    em { color: #6a6a6a; font-style: normal; font-size: 13px; }
+    code {
+      background: #f0f1f5;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 13px;
+      color: #d6336c;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #ececec;
+      margin: 32px 0;
+    }
+    .footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #ececec;
+      font-size: 13px;
+      color: #9a9a9a;
+      text-align: center;
+    }
+    .box {
+      background: #fff7e8;
+      border-left: 3px solid #ff976a;
+      padding: 12px 16px;
+      border-radius: 4px;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <h1>盛名学英语 · 隐私协议</h1>
+  <p><em>最后更新:2026 年 9 月</em></p>
+
+  <h2>一、引言</h2>
+  <p>盛名学英语(以下简称"本应用")由开发者本人运营,致力于为用户提供本地化、隐私友好的英语学习工具。我们<strong>默认不收集任何个人信息</strong>,所有学习数据(单词本、学习进度、设置等)均存储在用户手机本地。</p>
+
+  <h2>二、信息收集</h2>
+  <h3>2.1 我们主动收集的信息</h3>
+  <p><strong>无。</strong>本应用不在任何自有服务器存储用户的学习记录、单词本、进度等业务数据。</p>
+
+  <h3>2.2 微信平台提供的信息(用户主动授权时)</h3>
+  <p>当用户主动点击"微信登录"时,微信平台会向本应用提供:</p>
+  <ul>
+    <li><strong>昵称、头像</strong>:仅用于在本应用内显示,不存储到任何服务器</li>
+    <li><strong>openid</strong>:仅作为本地用户标识,不发送到任何服务器
+      <ul>
+        <li>注:v1 版本中,本应用<strong>未配置后端服务</strong>,因此 openid 解码后的实际值不参与任何业务逻辑</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>2.3 微信平台自动收集的信息</h3>
+  <p>根据微信小程序平台规则,使用本应用时,微信可能会收集:</p>
+  <ul>
+    <li>设备型号、操作系统版本</li>
+    <li>小程序版本号、微信版本号</li>
+    <li>设备 IP 地址(用于网络请求时)</li>
+    <li>登录时间、访问页面</li>
+  </ul>
+  <div class="box">⚠️ 这部分信息由微信平台管理,请参考微信隐私政策。</div>
+
+  <h2>三、信息使用</h2>
+  <p>由于本应用采用"本地优先"模式:</p>
+  <ul>
+    <li>学习数据<strong>只在用户手机本地使用</strong>,用于计算复习时间、显示进度</li>
+    <li>不会用于任何形式的用户画像、个性化推荐、精准营销</li>
+    <li>不会与任何第三方共享、转让、披露</li>
+  </ul>
+
+  <h2>四、信息存储</h2>
+
+  <h3>4.1 存储位置</h3>
+  <ul>
+    <li>所有学习数据存储于用户手机的微信小程序本地缓存(<code>wx.setStorageSync</code>)</li>
+    <li>单个小程序总缓存上限 10MB,本应用实际使用通常不超过 200KB</li>
+  </ul>
+
+  <h3>4.2 存储期限</h3>
+  <ul>
+    <li>数据保留至用户主动清除(微信"设置→小程序→删除")或卸载微信</li>
+    <li>本应用内"我的→清空所有学习数据"可手动清除</li>
+  </ul>
+
+  <h3>4.3 备份与迁移</h3>
+  <ul>
+    <li><strong>当前版本不支持云备份。</strong>卸载微信、更换手机将导致本地数据丢失</li>
+    <li>v2 版本计划提供可选的云同步功能(需用户主动开启)</li>
+  </ul>
+
+  <h2>五、第三方服务</h2>
+  <p>本应用 v1 版本不集成任何第三方 SDK、不调用第三方 API、不嵌入任何外部资源。</p>
+
+  <h2>六、用户权利</h2>
+  <p>您对自己的数据拥有完全控制权:</p>
+  <ul>
+    <li><strong>查看</strong>:在应用内查看所有学习数据</li>
+    <li><strong>修改</strong>:在"我的"页面修改每日目标等设置</li>
+    <li><strong>删除</strong>:在"我的→清空所有学习数据"中清除全部数据</li>
+    <li><strong>撤回授权</strong>:微信"设置→小程序"中可关闭/删除授权</li>
+  </ul>
+
+  <h2>七、未成年人保护</h2>
+  <p>本应用不针对未成年人设计,如未满 14 周岁,请在监护人指导下使用。</p>
+
+  <h2>八、协议变更</h2>
+  <p>如本协议有重大变更,我们会在应用内显著位置通知。继续使用即视为接受变更后的协议。</p>
+
+  <h2>九、联系我们</h2>
+  <p>如有疑问、建议或投诉:</p>
+  <ul>
+    <li>微信小程序内"我的→关于"反馈</li>
+    <li>邮箱:(待补充)</li>
+    <li>开发者主体:(待补充)</li>
+  </ul>
+
+  <hr>
+  <p style="text-align:center;color:#2b6cff;font-weight:500;">本应用核心承诺:你的学习数据是你的,不是我们的。</p>
+
+  <div class="footer">
+    © 2026 盛名学英语 · 本页面托管于 GitHub Pages
+  </div>
+</body>
+</html>

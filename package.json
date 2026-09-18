@@ -1,0 +1,10 @@
+{
+  "name": "shengming-legal",
+  "version": "1.0.0",
+  "description": "托管盛名学英语小程序的隐私协议和用户协议,供 GitHub Pages 部署",
+  "scripts": {
+    "dev": "npx serve .",
+    "deploy": "node tools/deploy.js"
+  },
+  "keywords": ["legal", "wechat-miniprogram", "github-pages"]
+}
